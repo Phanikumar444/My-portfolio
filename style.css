@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f4f7fc;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #00f2fe;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.project-card {
+  background: white;
+  border-left: 5px solid #4facfe;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+#contact a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+footer a {
+  color: #00f2fe;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
